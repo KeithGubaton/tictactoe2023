@@ -1,0 +1,64 @@
+body {
+    background-color: #111; /* Dark background */
+    font-family: 'Press Start 2P', monospace; /* Game-like font */
+    color: #fff; /* White text */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #FF5733; /* Orange-red text */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333; /* Dark gray cell background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff; /* White text */
+    border: 2px solid #FF5733; /* Orange-red cell border */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #FF5733; /* Orange-red hover background */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+#status {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #FF5733; /* Orange-red text */
+}
+
+#reset {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #FF5733; /* Orange-red button background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #D9411E; /* Slightly darker orange-red on hover */
+}
